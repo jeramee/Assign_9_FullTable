@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		How to convert JSON data to a
+		html table using JavaScript ?
+	</title>
+	
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+</head>
+
+<body style = "text-align:center;" id = "body">
+	
+	<p style = "color:navy;" >
+		Assignment 9
+	</p>
+	
+	<p id = "GFG_UP" style =
+		"font-size: 15px; font-weight: bold;">
+	</p>
+
+	
+	<button onclick = "constructTable('#table')">
+		click here
+	</button>
+	
+	<br><br>
+	
+	<table align = "center"
+			id="table" border="1">
+	</table>
+	
+    <hr>
+
+    <script src = "main.js">
+
+    </script>
+
+    <div>
+        <p id="posts">Posts</p>
+        <script>    
+            getAllPosts();
+        </script>
+        <hr>
+    </div>
+
+    <div>
+        <p>Users</p>
+        <div id="users"></div>
+        <script>
+            getAllUsers();
+        </script>
+        <hr>
+    </div>
+
+    <div>
+        <p>Comments</p>
+        <div id="comments">
+            <form action="/action_page.php">
+                <label for="postID">Post_ID:</label><br>
+                <input type="text" id="postID" name="postID"><br>
+            </form>
+        </div>
+        <script>
+            let postID = 1;
+            getComments(postID);
+        </script>
+        <hr>
+    </div>
+
+    <div>
+        <p>Get User</p>
+        <div id="getUser">
+            <form action="/action_page.php">
+                <label for="userID_1">User ID:</label><br>
+                <input type="text" id="userID_1" name="userID_1"><br>
+            </form>
+        </div>
+        <script>
+            let userID_1 = 1;
+            getComments(userID_1);
+        </script>
+        <hr>
+    </div>
+
+    <div>
+        <p>Get Todos for User</p>
+        <div id="getTodo">
+            <form action="/action_page.php">
+                <label for="userID_2">User ID:</label><br>
+                <input type="text" id="userID_2" name="userID_2"><br>
+            </form>
+        </div>
+        <script>
+            let userID_2 = 1;
+            getTodosForUser(userID_2);
+        </script>
+        <hr>
+    </div>
+
+</body>
+
+</html>
